@@ -73,7 +73,7 @@ void Button::setTextColor(sf::Color) {
 }
 
 sf::Color Button::getTextColor() {
-	return insideText.getFillColor();
+	return insideText.getColor();
 }
 
 void Button::update(sf::RenderWindow &win)

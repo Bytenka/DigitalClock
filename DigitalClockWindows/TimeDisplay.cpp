@@ -9,7 +9,7 @@ TimeDisplay::TimeDisplay()
 {
 	insideText.setFont(fontForClock);
 	insideText.setCharacterSize(characterSize);
-	insideText.setFillColor(textColor);
+	insideText.setColor(textColor);
 	//motherRect = win;
 
 	this->update();
@@ -40,12 +40,12 @@ void TimeDisplay::update(sf::Rect<float> &mRect)
 
 void TimeDisplay::setTextColor(sf::Color c)
 {
-	insideText.setFillColor(c);
+	insideText.setColor(c);
 }
 
 sf::Color TimeDisplay::getTextColor()
 {
-	return insideText.getFillColor();
+	return insideText.getColor();
 }
 
 void TimeDisplay::setCharSize(int s)
