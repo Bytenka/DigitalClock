@@ -20,6 +20,7 @@ void TimeDisplay::update()
 	insideText.setString(timer.getStringCurrentTime());
 
 	// Set the origin at the center of the text
+	// Test
 	sf::Rect<float> bounds = insideText.getLocalBounds();
 	sf::Vector2f ori = sf::Vector2f(
 		bounds.left + bounds.width / 2,
